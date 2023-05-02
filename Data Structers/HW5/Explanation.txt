@@ -1,0 +1,35 @@
+Explantion by Idan Yehiel 208128793 and Shir Matathias 208000281:
+Graph 1: QuickSort vs. Counting
+-We know that the running time of Counting Sort is O(n + k) which is O(n) thus, we can see that the slope of the red line is approx. 0.
+For every n>=1, we have n<=n*logn, thus the red line is below the green line.
+-We know that the running time of QuickSort on average is O(n*logn). Looking at the graph, the running time is approx. n*logn (the slope is different).
+Thus, we can assume that when we run the code with different random 'k' values we receive a line that is similar to n*logn.
+
+Graph 2: QuickSort vs. Merge
+-As we mentioned above, the running time of QuickSort is n*logn and as we can see it has the same slope as the green line which is n*logn.
+-The blue line that represents the running time of MergeSort has the exact same slope as the two other lines (the green and the red) n*logn.
+As we proved in class, MergeSort has the running time of n*logn at the worst case. Thus when we run it with different values we receive approx.
+the same line as n*logn.
+
+Graph 3: Merge vs. QuickSort both on sorted array
+-As we mentioned above, the running time of QuickSort is n*logn at the average case. In the worst case the running time is O(n^2). As the array is sorted 
+the pivot is choosen to be the rightmost element which is the largest element in the array. Thus, when implementing the recursive call of the function
+we call an empty array and the whole array (incontrary to implementing the recursive call on half the array twice). Thus we get the time complexity of
+O(n^2).
+-When looking at MergeSort, the worst case and average case and best case running time is n*logn. Looking at the graph, we have the same slope for both
+green and blue lines thus we can say that the time complexity is approx. the same. 
+
+Graph 4: Merge vs. BubbleSort both on random array
+-As we mentioned in Graph 3, the running time of MergeSort is always n*logn thus it doesn't matter whether the array is sorted or random. Once getting a
+random array the green line has the same slope as the red line.
+-When looking at the BubbleSort's line (the blue line) we can see that it is extremely larger then the green line. This is because the worst case time
+complexity is O(n^2), once the array is random the number of swaps is larger than when the array is nearly sorted. Thus, the time complexity increases 
+dramaticly.
+
+Graph 5: QuickSort vs. QuickSelect both with random pivots and quickselect with a random rank
+-Looking at QuickSort as we mentioned in Graph 1 the average running time is n*logn. Once we choose a random pivot we get approx. closer to the median of the 
+elements of the array since we call the recursive call with equally sized arrays. Thus we have the approx. the same slope as the n*logn.
+-The QuickSelect running time is O(n) at the average case. Once we choose a random pivot we get close to the median of the elements of the array,
+this by the same explantion as QuickSort. We get that choosing a random element makes the sorting more efficent.
+Choose a random rank we can get approx. close to the average element of the array such that it has approx. the same amount of elements 
+before and after it in the array. Thus, the running time gets very close to O(n) which is the average case.
