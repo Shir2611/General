@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"MMS","l":"List"},{"p":"MMS","l":"ListIterator"},{"p":"MMS","l":"MemBlock"},{"p":"MMS","l":"MemorySpace"},{"p":"MMS","l":"Node"}];updateSearchResults();
